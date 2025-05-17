@@ -3,7 +3,7 @@ import uuid
 
 from datetime import datetime, timedelta
 from typing import Optional, Dict
-from jwt import ExpiredSignatureError, InvalidTokenError, InvalidSignatureError
+from jwt.exceptions import ExpiredSignatureError, InvalidTokenError, InvalidSignatureError
 from itsdangerous import URLSafeSerializer, BadSignature, SignatureExpired
 
 from .config import GatewayConfig
